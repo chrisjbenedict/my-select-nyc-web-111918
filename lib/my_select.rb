@@ -3,7 +3,7 @@ def my_select(collection)
  i = 0
  arr = []
  while i < collection.length
-   arr << collection.select(yield(collection[i]))
+   arr.push(collection.select(yield(collection[i])))
    i += 1
  end
  arr
